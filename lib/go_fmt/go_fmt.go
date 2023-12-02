@@ -8,11 +8,11 @@ import (
 )
 
 var (
-	console Writer
+	Console Writer
 )
 
 func init() {
-	console = &StdoutWriter{
+	Console = &StdoutWriter{
 		writeOut:  colorable.NewColorableStdout(),
 		writeErr:  colorable.NewColorableStderr(),
 		printable: true,
